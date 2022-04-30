@@ -1,0 +1,46 @@
+.info-register{
+    width: 370px;
+    height: 61px;
+    background: #DA217F;
+    border-radius: 0px 20px 20px 0px;
+    color:#fff;
+    font-family: var(--bold-font);
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    
+}
+.no-margim{
+    margin:0;
+}
+.no-display{
+    display: inline;
+}
+.mt-6{
+    margin-top: 60px;
+}
+#second-infos{
+    display:none;
+}
+.label{
+
+    background-color:#00000000;
+    border:0;
+   
+    border-bottom:  2px solid #861B64;
+
+    padding-bottom: 5px;
+}
+.select-gender{
+    border-radius: 10px;
+    background-color:#861B64 ;
+    color:#fff;
+    outline:none;
+    border: 0;
+    padding-left:5px;
+    padding-bottom: 7px;
+    font-family: var(--bold-font);
+}
+.select-gender:after  {
+    border-radius: 15px;
+}

@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'Amfibia Regular' ;
+    src: url('fonts/Amfibia-RegularExpanded.ttf') format('truetype');
+    
+}
+@font-face {
+    font-family: 'Amfibia DemiBold' ;
+    src: url('fonts/Amfibia-DemiBoldExpanded.ttf') format('truetype');
+}
+:root {
+    --main-font: 'Amfibia Regular',Arial, sans-serif;
+    --bold-font: 'Amfibia DemiBold',Arial, sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+body{
+  background-color: #F4BEDC !important; 
+}
+p{
+    margin-bottom: 0 !important;
+}
+#main-font{
+    font-family: var(--main-font);
+    font-size: 1.5em;
+}
+#bold-font{
+    font-family:var(--bold-font);
+    font-size: 1.5em;
+}
+.welcome-image{
+    min-width: 315px;
+    height: 302px;
+}
+.image{
+    display:flex;
+    justify-content: end;
+}
+.line-1{
+    font-family: var(--bold-font);
+    font-size: 16px; 
+    color: #861B64;
+}
+.title{
+    font-family: var(--main-font);
+    font-style: normal;
+    max-width: 554px;
+    font-weight: 600;
+    line-height: 45px;
+    font-size: 2em;
+    color: #FFFFFF;
+}
+.line-2{
+    font-family: var(--main-font);
+
+    font-weight: 400;
+    font-size: 16px;
+    max-width: 389px;
+    color: #FFFFFF;
+}
+.start-button{
+    width: 167px;
+    height: 43px;
+    background-color: #861B64;
+    border-radius: 25px;
+    border: 0;
+    font-family: var(--main-font);
+    padding-bottom:8px;
+   
+    color: #FFFFFF;
+  
+}
+.start-button:hover{
+    background-color: #861b64af;
+}
+.wrap{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+
+    
+}
+
+@media (max-width: 768px) {
+    .welcome-image{
+        display:none;
+    }
+    .main{
+
+      text-align: center;
+    }
+    .line-2{
+        position:relative;
+        left: 50%;
+        transform:translate( -50%);
+    }
+ 
+ 
+}
+#obj-1{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 10%;
+}
+#obj-2{
+    position:absolute;
+    top: 0;
+    right: 0;
+    width: 8%; 
+}
+#obj-3{
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    width: 10%; 
+}
+#obj-4{
+    position:absolute;
+    bottom: 0;
+    left: 20%;
+    width:18%; 
+}
+#obj-5{
+    position:absolute;
+    top: -40px;
+    left: 50%;
+    transform:translate( -50%);
+    width:15%; 
+}
