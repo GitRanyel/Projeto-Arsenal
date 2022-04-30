@@ -5,7 +5,7 @@
 }
 #message{
 
-    width: 387px;
+    max-width: 387px;
    margin:auto;
     
     
@@ -86,3 +86,16 @@
     background: #DA217FAF;
 }
 
+@media (max-width: 768px) {
+    .main-image, .horizontal-line,#message {
+        display:none;
+    }
+
+    .line-2{
+        position:relative;
+        left: 50%;
+        transform:translate( -50%);
+    }
+ 
+ 
+}

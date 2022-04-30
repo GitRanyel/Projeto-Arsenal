@@ -10,6 +10,20 @@
     justify-content:center;
     
 }
+.small-info{
+    width: 370px;
+    height: 61px;
+    background: #DA217F;
+    border-radius: 20px;
+    color:#fff;
+    font-family: var(--bold-font);
+    padding-top: 15px;
+   position: relative;
+   top: -30px;
+    text-align: center;
+    margin:auto;
+ 
+}
 .no-margim{
     margin:0;
 }
@@ -19,7 +33,10 @@
 .mt-6{
     margin-top: 60px;
 }
-#second-infos{
+.mt-7{
+    margin-top: 70px;
+}
+#second-infos,#adress, .small-info{
     display:none;
 }
 .label{
@@ -43,4 +60,38 @@
 }
 .select-gender:after  {
     border-radius: 15px;
+}
+#first-infos{
+    align-items: center;
+}
+@media (max-width: 1008px) {
+  
+   #continue{
+       margin-top:10px !important;
+   }
+   .buttons{
+    text-align: center;
+   }
+ 
+}
+
+@media (max-width:875px) {
+ #obj-2{
+     display:none;
+ }
+ 
+ 
+}
+@media (max-width:768px) {
+   .no-margim{
+       margin:auto;
+   }
+   .main{
+       text-align: center;
+   }
+   .small-info{
+       display:block
+   } 
+ 
+ 
 }
