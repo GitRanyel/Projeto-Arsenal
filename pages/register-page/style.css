@@ -48,6 +48,9 @@
 
     padding-bottom: 5px;
 }
+.custom-select > select{
+    cursor: pointer;
+}
 .select-gender{
     border-radius: 10px;
     background-color:#861B64 ;
@@ -57,12 +60,68 @@
     padding-left:5px;
     padding-bottom: 7px;
     font-family: var(--bold-font);
+    
 }
-.select-gender:after  {
-    border-radius: 15px;
+
+
+.select-gender > option:disabled  {
+    color:#f0f0f0;
+}
+.select-gender > option{
+   cursor: pointer;
+
 }
 #first-infos{
     align-items: center;
+}
+
+
+.input-adress{
+  
+    width: 100px;  
+    background-color:#00000000;
+    border:0;
+    outline:none;
+    border-bottom:  2px solid #861B64;
+    font-family: var(--bold-font);
+    font-size: 16px;
+    color: #861B64;
+    padding-bottom: 5px;
+}
+.input-adress::placeholder{
+    
+    font-family: var(--bold-font);
+    font-size: 16px;
+    color: #861B64;
+
+}
+.input-lg{
+    width: 300px;  
+}
+.left{
+    margin-right: 40px;
+    width: 150px ;  
+}
+
+.termos{
+    font-family: var(--bold-font);
+    text-decoration: underline;
+}
+#flexCheckDefault{
+    margin-top: 7px;
+    cursor: pointer;
+
+}
+#flexCheckDefault:checked{
+    background-color:#861B64;
+    border-color: #861B64;
+}
+#flexCheckDefault:focus{
+    box-shadow: none;
+
+}
+.label-wid{
+    max-width: 300px;
 }
 @media (max-width: 1008px) {
   
@@ -86,12 +145,18 @@
    .no-margim{
        margin:auto;
    }
-   .main{
-       text-align: center;
-   }
+   .left{
+    margin-right: 40px;
+
+    } 
    .small-info{
        display:block
    } 
  
  
+}
+
+.teste{
+    width:300px;
+   
 }
