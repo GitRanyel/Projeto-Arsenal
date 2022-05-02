@@ -1,6 +1,7 @@
 
 function openPage(){
-    window.open('../pages/login-page/index.html',"_self")
+    window.open('./pages/login-page/index.html',"_self")
+   
 }
 
 

@@ -107,16 +107,16 @@
     font-family: var(--bold-font);
     text-decoration: underline;
 }
-#flexCheckDefault{
+#flexCheckDefault, #flexCheckPass{
     margin-top: 7px;
     cursor: pointer;
 
 }
-#flexCheckDefault:checked{
+#flexCheckDefault:checked,  #flexCheckPass:checked{
     background-color:#861B64;
     border-color: #861B64;
 }
-#flexCheckDefault:focus{
+#flexCheckDefault:focus,  #flexCheckPass:focus {
     box-shadow: none;
 
 }

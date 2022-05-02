@@ -16,9 +16,16 @@ function formContinue(e){
             }
         }
         if (info == true){
-         document.getElementById('first-infos').style.display = 'none';
-         document.getElementById('second-infos').style.display = 'block';
-         page = 'second';
+
+            if (document.getElementsByClassName('input')[2].value != document.getElementsByClassName('input')[3].value){      
+                showAlert("pass");
+                    
+            }else{
+                document.getElementById('first-infos').style.display = 'none';
+                document.getElementById('second-infos').style.display = 'block';
+                page = 'second';
+            }
+
         }
      
     }else if (page == 'second'){
@@ -90,8 +97,16 @@ function returnPage(e){
 }
 
 
+function showPass(){
+    let x = document.getElementsByClassName('input')[2];
 
+    if (x.type === "password") {
+        x.type = "text";
+      } else {
+        x.type = "password";
+    }
+}
 
-
+document.querySelector('#flexCheckPass').addEventListener('click', showPass)
 document.getElementById('continue').addEventListener('click', formContinue);
 document.getElementById('return').addEventListener('click',returnPage);
