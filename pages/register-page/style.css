@@ -123,6 +123,9 @@
 .label-wid{
     max-width: 300px;
 }
+.div-wid{
+    max-width: 150px;
+}
 @media (max-width: 1008px) {
   
    #continue{
