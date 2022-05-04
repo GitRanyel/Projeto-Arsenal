@@ -49,14 +49,27 @@
                           </div>
                     </div>
                     <div id="second-infos">
-                        <input type="number" name=""  placeholder="Celular com DDD*" class="mt-7 input no-margim">
-                        <input type="number" name=""  placeholder="CPF" class="mt-4 input no-margim">
+                        <input type="tel" name=""  placeholder="Celular com DDD*" id="phone" class="mt-7 input no-margim">
+                        <input type="text" name=""  placeholder="CPF" id="CPF" class="mt-4 input no-margim">
                         <div ><label for="birth" class="line-1 label">Nascimento:⠀</label><input type="date" name="birth" id="birth" class="mt-4 input no-margim no-display"></div>
-                        <input type="text" name=""  placeholder="Escolaridade*" class="mt-4 input no-margim">
+                
 
                         <div class="mt-4 custom-select">
-                            <label for="gender" class="line-1 label">Gênero:</label>
-                            <select name="" class="select-gender">
+                            <label for="gender" class="line-1 label">Escolaridade:</label>
+                            <select name="" class="input no-margim select">
+                                <option value="" disabled selected>Selecione uma opção</option>
+                                <option value="Superior Completo">Superior Completo</option>
+                                <option value="Superior Incompleto">Superior Incompleto</option>
+                                <option value="Médio Completo">Médio Completo</option>
+                                <option value="Médio Incompleto">Médio Incompleto</option>
+                                <option value="Fundamental Completo">Fundamental Completo</option>
+                                <option value="Fundamental Incompleto">Fundamental Incompleto</option>
+                            </select>
+                        </div> 
+                        
+                        <div class="mt-4 custom-select">
+                            <label for="gender" class="line-1 label ">Gênero:</label>
+                            <select name="" class="input no-margim select">
                                 <option value="" disabled selected>Selecione uma opção</option>
                                 <option value="masculino">Masculino</option>
                                 <option value="Feminino">Feminino</option>
@@ -70,12 +83,44 @@
                     <div id="adress">
                         <div class="mt-7 teste no-margim ">
                             <input type="text" name=""  placeholder="Cidade*" class="left input-adress no-margim">
-                            <input type="text" name=""  placeholder="Estado*" class="input-adress no-margim">
+                        
+                    
+
+                            <select id="UF" class="input-adress no-margim select"  name="UF">
+                                <option value="" disabled selected>Selecione</option>
+                                <option value="AC">AC</option>
+                                <option value="AL">AL</option>
+                                <option value="AP">AP</option>
+                                <option value="AM">AM</option>
+                                <option value="BA">BA</option>
+                                <option value="CE">CE</option>
+                                <option value="DF">DF</option>
+                                <option value="ES">ES</option>
+                                <option value="GO">GO</option>
+                                <option value="MA">MA</option>
+                                <option value="MS">MS</option>
+                                <option value="MT">MT</option>
+                                <option value="MG">MG</option>
+                                <option value="PA">PA</option>
+                                <option value="PB">PB</option>
+                                <option value="PR">PR</option>
+                                <option value="PE">PE</option>
+                                <option value="PI">PI</option>
+                                <option value="RJ">RJ</option>
+                                <option value="RN">RN</option>
+                                <option value="RS">RS</option>
+                                <option value="RO">RO</option>
+                                <option value="RR">RR</option>
+                                <option value="SC">SC</option>
+                                <option value="SP">SP</option>
+                                <option value="SE">SE</option>
+                                <option value="TO">TO</option>
+                            </select>
                         </div>
                         <input type="text" name=""  placeholder="Rua*" class="mt-4 input input-lg no-margim">
                         <div class="mt-4 teste no-margim">
                             <input type="number" name=""  placeholder="Número*" class="left input-adress no-margim">
-                            <input type="number" name=""  placeholder="CEP*" class="input-adress no-margim">
+                            <input type="text" name=""  placeholder="CEP*" id="CEP" class="input-adress no-margim">
                         </div>
                         <input type="text" name=""  placeholder="Complemento*" class="mt-4 input input-lg no-margim">
                         <div class="form-check mt-4 label-wid no-margim">
@@ -103,6 +148,11 @@
 
 
 
+    
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>      
     <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
     <script src="../script-alert/script.js" type="text/javascript"></script>
     <script src="script.js" type="text/javascript"></script>

@@ -3,6 +3,9 @@
 page = 'first';
 
 
+$("#phone").mask("(00) 0 0000-0000");
+$("#CPF").mask('000.000.000-00');
+$("#CEP").mask('00000-000');
 
 function formContinue(e){
     e.preventDefault();
@@ -106,6 +109,7 @@ function showPass(){
         x.type = "password";
     }
 }
+
 
 document.querySelector('#flexCheckPass').addEventListener('click', showPass)
 document.getElementById('continue').addEventListener('click', formContinue);

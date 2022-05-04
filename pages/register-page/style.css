@@ -51,18 +51,42 @@
 .custom-select > select{
     cursor: pointer;
 }
-.select-gender{
-    border-radius: 10px;
-    background-color:#861B64 ;
-    color:#fff;
-    outline:none;
-    border: 0;
-    padding-left:5px;
-    padding-bottom: 7px;
-    font-family: var(--bold-font);
-    
-}
 
+.select{
+    cursor: pointer;
+    display: inline;
+  
+    padding-bottom: 3px;
+
+}
+.select > option{
+    background-color: #861B64 !important;
+    color:#fff;
+   
+}
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+background-color: #861B64;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(255, 255, 255); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #d4d4d4; 
+    cursor: pointer;
+
+  }
 
 .select-gender > option:disabled  {
     color:#f0f0f0;
