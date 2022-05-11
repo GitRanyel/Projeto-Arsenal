@@ -73,7 +73,7 @@ function formContinue(e){
             if (document.querySelector("#flexCheckDefault").checked == false){
                 showAlert("warning");
             }else{
-                page=""
+                window.open('../form/index.html',"_self")
                 
             }
            
