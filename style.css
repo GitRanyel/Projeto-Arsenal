@@ -7,6 +7,24 @@
     font-family: 'Amfibia DemiBold' ;
     src: url('fonts/Amfibia-DemiBoldExpanded.ttf') format('truetype');
 }
+
+@media (max-width: 768px) {
+    .welcome-image{
+        display:none;
+    }
+    .main{
+
+      text-align: center;
+    }
+    .line-2{
+        position:relative;
+        left: 50%;
+        transform:translate( -50%);
+    }
+ 
+ 
+}
+
 :root {
     --main-font: 'Amfibia Regular',Arial, sans-serif;
     --bold-font: 'Amfibia DemiBold',Arial, sans-serif;
@@ -87,19 +105,27 @@ p{
     
 }
 
-@media (max-width: 768px) {
-    .welcome-image{
-        display:none;
-    }
-    .main{
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
 
-      text-align: center;
-    }
-    .line-2{
-        position:relative;
-        left: 50%;
-        transform:translate( -50%);
-    }
- 
- 
-}
+  }
+  
+  /* Track */
+::-webkit-scrollbar-track {
+background-color: #861B64;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(255, 255, 255); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #d4d4d4; 
+    cursor: pointer;
+
+  }
+
