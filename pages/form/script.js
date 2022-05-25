@@ -28,27 +28,57 @@ function nextQuestion(){
             nextIdea();
         break;
         case "mvp":
+            document.querySelector("#teste").style.display = 'none'
             local.innerHTML = `
-            <div>
-                <label class="label-question mt-4">Ainda não existem perguntas para este nível!</label>          
+            <div class="div-wid">
+                <img src="images/cancel.svg" class="cancel-img">
+                <div class="label-question mt-4">
+                    Ops… Você está em um nível mais avançado, que ainda não estamos trabalhando! Parabéns! Não é fácil chegar a essa fase, ein? Que tal rever algumas etapas iniciais e revisar se não tem nenhum ajuste no seu negócio que pode ser feito? =D  
+                    <div>
+                    <button class="button-back mt-3" onclick="backForm()">Voltar</button>
+                    </div> 
+                </div>    
+                 
+          
             </div>`
         break;
         case "operacao":
+            document.querySelector("#teste").style.display = 'none'
             local.innerHTML = `
-            <div>
-                <label class="label-question mt-4">Ainda não existem perguntas para este nível!</label>          
+            <div class="div-wid">
+            <img src="images/cancel.svg" class="cancel-img">
+            <div class="label-question mt-4">
+                Ops… Você está em um nível mais avançado, estamos trabalhando para criar conteúdos que se adeque a sua necessidade nesse momento, assim que tivermos uma trilha como esta disponível, entraremos em contato! 
+                <div>
+                    <button class="button-back mt-3" onclick="backForm()">Voltar</button>
+                </div> 
+            </div>     
             </div>`
         break;
         case "tracao":
+            document.querySelector("#teste").style.display = 'none'
             local.innerHTML = `
-            <div>
-                <label class="label-question mt-4">Ainda não existem perguntas para este nível!</label>          
+            <div class="div-wid">
+                <img src="images/cancel.svg" class="cancel-img">
+                <div class="label-question mt-4">
+                    Ops… Você está em um nível mais avançado, estamos trabalhando para criar conteúdos que se adeque a sua necessidade nesse momento, assim que tivermos uma trilha como esta disponível, entraremos em contato! 
+                    <div>
+                        <button class="button-back mt-3"  onclick="backForm()">Voltar</button>
+                    </div> 
+                </div>          
             </div>`
         break;
         case "escala":
+            document.querySelector("#teste").style.display = 'none'
             local.innerHTML = `
-            <div>
-                <label class="label-question mt-4">Ainda não existem perguntas para este nível!</label>          
+            <div class="div-wid">
+            <img src="images/cancel.svg" class="cancel-img">
+                <div class="label-question mt-4">
+                    Ops… Você está em um nível mais avançado, que ainda não estamos trabalhando! Parabéns! Não é fácil chegar a essa fase, ein? Que tal rever algumas etapas iniciais e revisar se não tem nenhum ajuste no seu negócio que pode ser feito? =D  
+                    <div>
+                    <button class="button-back mt-3" onclick="backForm()">Voltar</button>
+                    </div> 
+            </div>            
             </div>`
         break;
         case "none":
@@ -68,6 +98,14 @@ function nextQuestion(){
 
     
 }
+function backForm(){
+    document.querySelector('#carouselExampleInterval').style.display = 'block';
+    document.querySelector("#teste").style.display = 'block';
+            
+    local.innerHTML = '';
+    
+}
+
 
 function next(func,trail){
 

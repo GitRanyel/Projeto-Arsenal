@@ -1,19 +1,4 @@
 
-@media (max-width: 605px){
-  .wrap{
-    margin: 20px 0;
-    position: static ;
-  transform:translate( 0%,0%);
-  }
-}
-@media  (max-height: 633px) {
-  .wrap{
-    margin: 20px 0;
-    position: static ;
-  transform:translate( 0%,0%);
-  }
-}
-
 
 .wrap{
   
@@ -102,6 +87,16 @@
   bottom:40px;
   right: 40px;
 }
+.button-back{
+  width: 187px;
+  height: 43px;
+  font-family: var(--main-font);
+  padding-bottom: 8px;
+  color: #fff;
+  background: #DA217F;
+  border-radius: 25px;
+  border:0;
+}
 
 .button-acess:hover{
   background: #DA217FAF;
@@ -166,4 +161,37 @@ h2{
 }
 .carousel-dark .carousel-control-next-icon, .carousel-dark .carousel-control-prev-icon {
   filter: none !important;
+}
+.div-wid,.cancel-img{
+  max-width:70%;
+  margin:auto;
+  display:flex;
+  align-items: center;
+ 
+}
+
+.cancel-img{
+  max-width: 40%;
+margin-right: 10%;
+}
+
+
+@media (max-width: 605px){
+  .wrap{
+    margin: 20px 0;
+    position: static ;
+  transform:translate( 0%,0%);
+  }
+}
+@media (max-width: 547px){
+  .cancel-img{
+    display: none;
+  }
+}
+@media  (max-height: 633px) {
+  .wrap{
+    margin: 20px 0;
+    position: static ;
+  transform:translate( 0%,0%);
+  }
 }

@@ -1,16 +1,4 @@
-@media (max-width: 680px) {
-  
-  #logo{
-      display: none;
-  }
-}
-@media (max-width: 760px) {
-  
-  .final{
-      padding:0 !important;
-  }
 
-}
 
 .question{ 
   margin: auto;
@@ -49,12 +37,22 @@
    text-decoration: underline ;
 }
 
-#testes{
-   width:600px !important;
+.container-iframe {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
 }
-.iframe{
- 
-   border-radius: 10px;
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
 .bold-font{
    font-family: var(--bold-font);
@@ -72,3 +70,66 @@
    padding-bottom: 3px;
    background-color: #DA217F !important;
 }
+
+.ft-size{
+   font-size: 20px;
+   font-weight: bold;
+}
+.btn{
+   display:none !important;
+}
+@media (max-width: 995px) {
+
+   .first-part{
+      display: none;
+   }
+   .btn{
+      display:inline-block !important;
+   }
+   .col-sm-7 {
+    
+     width: 95% !important;
+ }
+ .second{
+   text-align: center !important;
+   margin: auto;
+}
+
+}
+ 
+ @media (min-width: 768px){
+   .container, .container-md, .container-sm {
+      width: 95% !important;
+
+   }
+
+
+}
+ @media (max-width: 768px){
+ 
+   .col-sm-7 {
+      margin: auto;
+ 
+   }
+ 
+ 
+}
+
+@media (max-width: 680px) {
+  
+   #logo{
+       display: none;
+   }
+   .navbar>.container-fluid{
+      justify-content:center!important;
+   }
+ }
+ 
+@media (max-width: 460px) {
+  
+  .sidebar, .menu-elements{
+     width:90% !important;
+  }
+ }
+ 
+
