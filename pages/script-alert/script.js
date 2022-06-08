@@ -46,6 +46,16 @@ function showAlert(type){
             alerta = true;
         setTimeout( closeAlert,4000);
         }
+    }else if (type == "sucessPass"){
+        if (alerta == false){
+            document.querySelector("#alert").innerHTML = `    
+            <div class="alert alert-success alert-dismissible d-flex align-items-center fade show">
+            <i class="bi-check-circle-fill"></i>
+          <strong class="mx-2">Successo!</strong> Você resetou sua senha com sucesso!
+      </div>`;
+            alerta = true;
+        setTimeout( closeAlert,4000);
+        }
     }
     
 }

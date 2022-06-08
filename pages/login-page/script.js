@@ -10,6 +10,7 @@ function loginAccount(){
     }
     if (info == true){
         showAlert("sucess");
+        window.open("../main-page/index.html", target="_self")
     }
 }
 

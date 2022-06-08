@@ -370,6 +370,11 @@ function showTrail(trilha){
   
 }
 
+function mainPage(){
+    window.open("/pages/main-page/index.html", target="_self");
+}
 
 
 document.querySelector('#level').addEventListener('change',nextQuestion);
+
+document.querySelector('#btn-enter').addEventListener('click',mainPage);
